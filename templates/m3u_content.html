@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate filtered m3u</title>
+</head>
+<body>
+<h1>Save the following content in a .m3u file and import it to your iptv player</h1>
+<hr/>
+{% for line in m3u_lines %}
+{{line}}<br/>
+{% endfor %}
+<hr/>
+<p><a href="/">Return to Home</a></p>
+</body>
+</html>

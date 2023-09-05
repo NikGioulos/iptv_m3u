@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPTV Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<form method="POST" action="/m3u">
+    <label for="iptvServer">IPTV Server:</label>
+    <input type="text" name="iptvServer" id="iptvServer" required><br>
+
+    <label for="iptvUsername">IPTV Username:</label>
+    <input type="text" name="iptvUsername" id="iptvUsername" required><br>
+
+    <label for="iptvPassword">IPTV Password:</label>
+    <input type="password" name="iptvPassword" id="iptvPassword" required><br>
+
+    <label for="iptvServer">Filter channels by (comma separated keywords) keywords:</label>
+    <input type="text" name="iptvKeywords" id="iptvKeywords" required><br>
+
+    <label for="iptvServer">Save as m3u file?</label>
+    <input type="checkbox" name="iptvAsFile" id="iptvAsFile"><br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
